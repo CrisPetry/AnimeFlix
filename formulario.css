@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #000000 16.62%, #5F290B 57.09%);
+}
+
+.topo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 12px;
+}
+
+.topo-imagem {
+    height: 60px;
+}
+
+.topo-menu {
+    display: flex;
+    gap: 32px;
+}
+
+.topo-menu-item {
+    font-family: 'Sarala', sans-serif;
+    color: #FFF2E7;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px 10px;
+    position: relative;
+}
+
+a:after {
+    background: none repeat scroll 0 0 transparent;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+#titulo {
+    font-family: 'Righteous', cursive;
+    font-weight: 300;
+    color: #FFFFFF;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#subtitulo {
+    font-family: sans-serif;
+    color: #380B61;
+    margin-left: 10%;
+}
+
+fieldset {
+    border: 0;
+}
+
+.w3-container.w3-teal {
+    display: flex;
+    flex-direction: row;
+    font-family: sans-serif;
+    font-size: 1em;
+    justify-content: center;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+
+
+input, button {
+    border-radius: 5px;
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300;
+    margin-bottom: 0.2em;
+    color: #FFFFFF;
+    display: block;
+}
+
+fieldset .grupo .campo {
+    float: left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"], .campo input[type="email"] {
+    width: 300px;
+    padding: 0.2em;
+    border: 1px solid #59429d;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+    display: block;
+}
+
+.campo {
+    padding-right: 1em;
+}
+
+.campo input:focus {
+    background-color: #E0E0F8;
+}
+
+.botao {
+    font-size: 1.2em;
+    background: #59429d;
+    border: 0;
+    margin-bottom: 1em;
+    color: #fff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0, 0.5);
+    position: absolute;
+    top: 90%;
+    left: 56%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.botao:hover {
+    background: #CCBBFF;
+    color: #000000;
+    box-shadow: inset 2px 2px 2px rgb(0, 0, 0, 0.2);
+    text-shadow: none;
+}
+
+.botao, #check {
+    cursor: pointer;
+}
+
+#check {
+    display: inline-block;
+}
+
+.imagem {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+}
+
+body>div.w3-container.w3-teal>div>img {
+    max-width: 300px;
+    margin-top: -75px;
+    padding-left: 48px;
+}
+
+
+.rodape {
+    padding: 32px;
+    border-top: 0.4px solid #FFF2E7;
+}
+
+.rodape-imagem {
+    height: 32px;
+    display: block;
+    margin: 0 auto;
+}

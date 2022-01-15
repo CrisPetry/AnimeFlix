@@ -1,26 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solicitações</title>
+    <meta name="description" content="Solicite os animes que gostaria de assistir na plataforma">
+    <title>Formulário de Solicitação</title>
+    <link rel="stylesheet" type="text/css" href="formulario.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 </head>
+
 <body>
 
-    <div>
-        <h1>Solicitação de Animes</h1>
-        <p>Complete as informações</p>
+    <header class="topo">
+        <img class="topo-imagem"
+            src="https://img.icons8.com/external-konkapp-outline-color-konkapp/64/000000/external-ramen-japan-konkapp-outline-color-konkapp.png"
+            alt="Logo Ramen">
+        <nav class="topo-menu">
+            <a class="topo-menu-item" href="formulario.html">Solicitar</a>
+            <a class="topo-menu-item" href="index.html">Início</a>
+        </nav>
+    </header>
+
+    <div class="campo">
+        <h1 id="titulo">Solicitação de Animes</h1>
         <br>
     </div>
 
-    <form>
-        <fieldset>
-            <div>
-                <label>Nome</label>
-                <input type="text" name="nome" id="nome">
+    <div class="w3-container w3-teal">
+        <form>
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <div class="campo">
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email"><strong>E-mail</strong></label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <div class="campo">
+                    <label for="titulo"><strong>Título</strong></label>
+                    <input type="text" name="titulo" id="titulo" required>
+                </div>
+
+                <div class="campo">
+                    <label for="ano"><strong>Ano de lançamento</strong></label>
+                    <input type="text" name="ano" id="ano" maxlength="4" required>
+                </div>
+            </fieldset>
+
+
+            <div class="campo">
+                <label><strong>Qual o gênero do anime?</strong></label>
+                <label>
+                    <input type="radio" name="genero" value="shonen" checked> Shonen
+                </label>
+                <label>
+                    <input type="radio" name="genero" value="seinen"> Seinen
+                </label>
+                <label>
+                    <input type="radio" name="genero" value="isekai"> Isekai
+                </label>
             </div>
-        </fieldset>
-    </form>
-    
+
+
+            <button class="botao" type="submit" onsubmit="">Enviar</button>
+        </form>
+
+        <div class="imagem">
+            <img src="anime.svg" alt="Imagem Formulário">
+        </div>
+    </div>
+
+    <footer class="rodape">
+        <img class="rodape-imagem" src="ANIMEFLIX.svg" alt="Imagem logo Ballerini">
+    </footer>
 </body>
+
 </html>
